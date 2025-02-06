@@ -192,6 +192,7 @@ header{
   position: relative;
   float: left;
   margin: auto;
+    opacity: 50%;
 }
 
 .bannerText {
@@ -302,6 +303,7 @@ footer p {
   }
   .bannerCentro img {
     width: 50%;
+      opacity: 50%;
   }
   .menu-icon {
     display: block;
