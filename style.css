@@ -215,6 +215,7 @@ footer p {
 @media (max-width: 768px){
   .bannerText {
     font-size: 1rem;
+      text-align:left;
   }
   .bannerCentro img {
     width: 50%;
