@@ -330,5 +330,8 @@ footer p {
   header ul li {
     padding: 10px;
   }
+     #mainhead {
+    display: none;
+  }
 }
 
