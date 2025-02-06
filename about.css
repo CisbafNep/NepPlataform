@@ -268,4 +268,11 @@ footer p {
     box-shadow: 0 0 10px rgb(226, 224, 224);
     margin-bottom: 20px;
    }
+  .icons a img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
 }
