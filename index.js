@@ -11,3 +11,8 @@ function moveCarros(direction) {
 setInterval(() => {
     moveCarros(1);
 }, 4000);
+
+function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    menu.classList.toggle("open");
+}
