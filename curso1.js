@@ -14,3 +14,21 @@
          }
      });
  });
+
+
+ function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("overlay");
+    menu.classList.toggle("open");
+    overlay.classList.toggle("show");
+}
+
+// Quando o overlay (fundo) for clicado, o menu se fecha
+document.getElementById("overlay").addEventListener("click", closeMenu);
+
+function closeMenu() {
+    const menu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("overlay");
+    menu.classList.remove("open");
+    overlay.classList.remove("show");
+}
