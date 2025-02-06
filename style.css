@@ -212,5 +212,13 @@ footer p {
   text-align: center;
   color: rgb(0, 68, 255)
 }
+@media (max-width: 768px){
+  .bannerText {
+    font-size: 1rem;
+  }
+  .bannerCentro img {
+    width: 40%;
+  }
+}
 
 
