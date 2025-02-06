@@ -327,6 +327,13 @@ footer p {
 .corpo_nep button{
   width: 150px;
   font-size: 20px
-};
+}
+    .icons a img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
 }
 
