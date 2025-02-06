@@ -9,15 +9,28 @@
     <title>CISBAF - NEP</title>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img class="logo" src="BANNER_SITE_NOVA_LOGO.png" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" style="transform: scale(1); transition: transform 0.3s;"></a>
+       <header>
+        <a href="index.html">
+            <img class="logo" src="/img/BANNER_SITE_NOVA_LOGO.png" 
+                 onmouseover="this.style.transform='scale(1.2)'" 
+                 onmouseout="this.style.transform='scale(1)'" 
+                 style="transform: scale(1); transition: transform 0.3s;">
+        </a>
+    
+        <!-- Ícone do menu hamburguer -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+    
+    <!-- Menu lateral -->
+    <div class="side-menu" id="sideMenu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
         <ul>
             <li><a href="#">Página Inicial</a></li>
             <li><a href="/about.html">Sobre</a></li>
             <li><a href="#container">Catálogo de Cursos</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=5521968843062&text&type=phone_number&app_absent=0" target="_blank">Fale conosco</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=5521968843062" target="_blank">Fale conosco</a></li>
         </ul>
-    </header>
+    </div>
 
     <div class="bannerCentro">
         <div class="bannerText">
