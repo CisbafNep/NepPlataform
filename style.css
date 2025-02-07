@@ -23,14 +23,11 @@ header{
   header img{
     width: 200px;
   }
-  header ul li{
+  header a{
     position: relative;
     float: left;
     list-style: none;
     cursor: pointer;
-    
-  }
-  header ul li a{
     font-size: 20px;
     padding: 20px;
     display: flex;
@@ -95,17 +92,17 @@ header{
 }
 
 /* Estilização dos links do menu */
-.side-menu ul {
+.side-menu {
   list-style: none;
   padding: 20px;
 }
 
-.side-menu ul li {
+.side-menu a{
   padding: 15px;
   text-align: center;
 }
 
-.side-menu ul li a {
+.side-menu a {
   text-decoration: none;
   color: #333;
   font-size: 18px;
@@ -113,7 +110,7 @@ header{
   transition: 0.3s;
 }
 
-.side-menu ul li a:hover {
+.side-menu a:hover {
   color: brown;
 }
 .overlay {
@@ -342,7 +339,7 @@ footer p {
     animation: slideIn 0.3s ease-in-out;
   }
 
-  header ul li {
+  header a {
     padding: 10px;
   }
      #mainhead {
