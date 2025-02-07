@@ -298,12 +298,18 @@ footer{
 #imgfoot:hover {
   transform:  scale(1.1);
 }
-
-
 footer p {
   margin-top: 20px;
   text-align: center;
   color: rgb(0, 68, 255)
+}
+.midianep {
+ 
+  display: flex;
+  width: 300px;
+  position: relative;
+ margin: auto;
+
 }
 
 @media (max-width: 768px){
