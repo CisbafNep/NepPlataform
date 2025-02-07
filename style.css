@@ -304,7 +304,7 @@ footer p {
   color: rgb(0, 68, 255)
 }
 .midianep {
- 
+ margin-top: 20px;
   display: flex;
   width: 300px;
   position: relative;
