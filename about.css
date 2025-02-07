@@ -23,35 +23,25 @@ header:hover {
 header img{
   width: 200px;
 }
-header a{
-    position: relative;
-    float: left;
-    list-style: none;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    color: #333;
-    text-decoration: none;
-  }
-  .menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-  }
-
-.btnAcess {
-    border-radius: 50px;
-    padding: 6px;
-    border: 3px solid #B95151;
-    width: 90px;
-    cursor: pointer;
-    background-color: #fff;
-  }
-  .btnAcess:hover {
-    background-color: #B95151;
-    color: #fff;
-  }
+header ul li{
+  position: relative;
+  float: left;
+  list-style: none;
+  cursor: pointer;
+  
+}
+header ul li a{
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  color: #333;
+  text-decoration: none;
+}
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
 
 /*side menu*/
 
@@ -234,13 +224,7 @@ footer p {
   color: rgb(0, 68, 255)
 }
 @media (max-width: 768px){
-  .bannerText {
-    font-size: 1rem;
-    text-align:left;
-  }
-  .bannerCentro img {
-    width: 50%;
-  }
+  
   .menu-icon {
     display: block;
   }
@@ -278,11 +262,4 @@ footer p {
     box-shadow: 0 0 10px rgb(226, 224, 224);
     margin-bottom: 20px;
    }
-  .icons a img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-  }
 }
