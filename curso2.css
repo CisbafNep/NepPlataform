@@ -188,7 +188,8 @@ display: block;
 .box_trilha img{
     width: 70px;
 }
-a button {
+.subscribe button {
+/*     display: none; */
   border-radius: 50px;
   width: 200px;
   height: 50px;
@@ -200,11 +201,11 @@ a button {
   cursor: pointer;
   margin-right: auto;
 }
-a button {
+.subscribe button {
   text-decoration: none;
   color: brown;
 }
-a button:hover{
+.subscribe button:hover{
   background-color: darkgoldenrod;
   color: #fff;
   transition: all 500ms;
