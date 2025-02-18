@@ -77,10 +77,10 @@ plugins: [ChartDataLabels] // Ativa o plugin
 
 //gráfico de mapa//
 var data = [
-    ['br-sp', 22], ['br-mg', 18], ['br-rj', 6400], ['br-ba', 5],
-    ['br-ce', 3], ['br-df', 2], ['br-es', 2], ['br-ms', 3],
-    ['br-pa', 3], ['br-pb', 2],['br-pe', 3], ['br-pr', 7], ['br-rn', 4],
-    ['br-ro', 2], ['br-rs', 3], ['br-se', 1], ['br-to', 1], 
+    ['br-sp', 23], ['br-mg', 20], ['br-rj', 6400], ['br-ba', 6],, ['br-go', 2],
+    ['br-ce', 4], ['br-df', 2], ['br-es', 3], ['br-ms', 3],, ['br-al', 5],
+    ['br-pa', 3], ['br-pb', 2],['br-pe', 4], ['br-pr', 7], ['br-rn', 5],
+    ['br-ro', 2], ['br-rs', 3], ['br-se', 2], ['br-to', 1], ['br-ap', 1],
     ['br-vazio', 200] // Para estados com valores vazios, se necessário
 ];
 
