@@ -5,7 +5,7 @@
 }
 body {
     /* font-family: Arial, sans-serif; */
-    background-image: url(/img/iconX.png);
+    background-image: url(iconX.png);
     background-repeat:repeat-y;
     background-size: contain;
     background-attachment: fixed;
