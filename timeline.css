@@ -59,6 +59,9 @@ body {
     text-align: center;
 
 }
+.content ul li {
+  text-align: justify;
+}
 
 .year {
     position: absolute;
