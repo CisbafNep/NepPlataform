@@ -162,7 +162,7 @@ function closeMenu() {
 
     // Mostra/esconde o botão ao rolar a página
     window.onscroll = function () {
-        if (document.documentElement.scrollTop > 200) {
+        if (document.documentElement.scrollTop > 400) {
             backToTopButton.style.display = "block";
         } else {
             backToTopButton.style.display = "none";
