@@ -29,3 +29,20 @@ function closeMenu() {
     overlay.classList.remove("show");
 }
 
+  // Seleciona o botão
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Mostra/esconde o botão ao rolar a página
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 800) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Anima a rolagem suave para o topo
+    backToTopButton.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
