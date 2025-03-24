@@ -71,7 +71,7 @@ plugins: [ChartDataLabels] // Ativa o plugin
  createCounter('counter1', 1, 1, 20, 172);
  createCounter('counter2', 1000, 50, 5600, 50);
  createCounter('counter3', 1, 1, 20, 172);
- createCounter('counter4', 1000, 100, 7700, 70);
+ createCounter('counter4', 1000, 100, 7800, 70);
 
 
 
