@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menu Interativo + Background Dinâmico</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* FUNDO */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    overflow: hidden;
+    transition: background-image 0.6s ease-in-out;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* IMAGEM INICIAL FIXA */
+    background-image: url('./assets/midia/midianepCursos.png');
+}
+
+/* DEGRADÊ */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(191,21,38,0.65), rgba(252,239,93,0.65));
+    z-index: 1;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* LINKS + EFEITO LINHA */
+.sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 6px;
+    transition: 0.2s ease;
+    text-shadow: 
+        0 0 10px rgba(0,0,0,0.6),
+        0 0 20px rgba(0,0,0,0.4);
+}
+
+.sidebar a:hover {
+    opacity: 0.9;
+    transform: translateX(4px);
+}
+
+/* LINHA HOVER */
+.sidebar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+.sidebar a:hover::after {
+    width: 100%;
+}
+
+/* CONTEÚDO */
+.content {
+    position: relative;
+    z-index: 2;
+    margin-left: 200px;
+    max-width: 600px;
+    color: white;
+    text-shadow: 
+        0 0 10px rgba(0,0,0,0.6),
+        0 0 20px rgba(0,0,0,0.4);
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.btn {
+    padding: 14px 30px;
+    background: #4aa3ff;
+    color: white;
+    border-radius: 26px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.btn:hover {
+    background: #1e7ce8;
+}
+
+/* RESPONSIVO */
+@media(max-width: 820px) {
+    .content h1 { font-size: 48px; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero" id="hero">
+    <div class="overlay"></div>
+
+    <div class="sidebar">
+        <a data-bg="0" data-link="./catCursos.html">Catálogo de Cursos</a>
+        <a data-bg="1" data-link="https://cursosonline.nep.cisbaf.org.br/about.html">Mini Cursos - OCI</a>
+        <a data-bg="2" data-link="https://cursosonline.nep.cisbaf.org.br/timeline.html">História do NEP</a>
+        <a data-bg="3" data-link="https://api.whatsapp.com/send/?phone=5521968843062&text&type=phone_number&app_absent=0">Fale conosco</a>
+    </div>
+
+    <div class="content">
+        <h1>
+            <span><img src="./assets/midia/ICON.png" width="90px"></span>
+            <span style="color: grey;">Cisbaf</span>
+            <span style="color: #2559E8">NEP</span>
+        </h1>
+
+        <p style="font-size:25px">
+            <span style="color: #2559E8">N</span>úcleo de 
+            <span style="color: #2559E8">E</span>ducação 
+            <span style="color: #2559E8">P</span>ermanente
+        </p>
+
+        <br><br>
+        <a id="btnSaibaMais" class="btn" href="#" target="_blank">Saiba mais</a>
+    </div>
+    
+</div>
+
+
+<script>
+/* IMAGENS */
+const backgrounds = [
+    "./assets/midia/midianepCursos.png",
+    "./assets/midia/midianepOCI.png",
+    "./assets/midia/mapaHist2.png",
+    "./assets/midia/bannerCentro.png"
+];
+
+const hero = document.getElementById("hero");
+const btnSaibaMais = document.getElementById("btnSaibaMais");
+
+/* TROCA IMAGEM + LINK */
+document.querySelectorAll(".sidebar a").forEach(link => {
+    link.addEventListener("click", () => {
+
+        /* Troca a imagem */
+        const index = link.getAttribute("data-bg");
+        hero.style.backgroundImage = `url('${backgrounds[index]}')`;
+
+        /* Troca o link do botão */
+        const linkDestino = link.getAttribute("data-link");
+        btnSaibaMais.href = linkDestino;
+    });
+});
+</script>
+
+</body>
+</html>

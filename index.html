@@ -4,176 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon_cisbaf.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/midia/favicon_cisbaf.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <title>CISBAF - NEP</title>
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <img class="logo" src="https://cursoonline-nep-cisbaf.vercel.app/BANNER_SITE_NOVA_LOGO.png"
-                onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"
-                style="transform: scale(1); transition: transform 0.3s;">
-        </a>
-        <div id="mainhead">
-            <a href="index.html">Página Inicial</a>
-            <a href="/about.html">Sobre o NEP</a>
-            <a href="index.html#container">Catálogo de Cursos</a>
-            <a href="https://cursosonline.nep.cisbaf.com/homologacao/mod/page/view.php?id=692">Perguntas Frequentes</a>
-            <a href="timeline.html">História do NEP</a>
-            <a href="https://api.whatsapp.com/send/?phone=5521968843062&text&type=phone_number&app_absent=0"
-                target="_blank">Fale conosco</a>
-            <a href="https://cursosonline.nep.cisbaf.com/homologacao/login/index.php"><button
-                    class="btnAcess">Entrar</button></a>
-        </div>
-
-        <!-- Ícone do menu hamburguer -->
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    </header>
+    <!--Header-->
+    <site-header></site-header>
 
     <!-- Menu lateral -->
-    <div class="side-menu" id="sideMenu">
-        <button class="close-btn" onclick="toggleMenu()">✖</button>
-        <a href="index.html"><img class="logo" src="https://cursoonline-nep-cisbaf.vercel.app/BANNER_SITE_NOVA_LOGO.png"
-                style="width: 200px;"></a>
-        <a href="index.html">Página Inicial</a>
-        <a href="/about.html">Sobre o NEP</a>
-        <a href="#container">Catálogo de Cursos</a>
-        <a href="https://cursosonline.nep.cisbaf.com/homologacao/mod/page/view.php?id=692">Perguntas Frequentes</a>
-        <a href="timeline.html">História do NEP</a>
-        <a href="https://api.whatsapp.com/send/?phone=5521968843062" target="_blank">Fale conosco</a>
-        <a href="https://cursosonline.nep.cisbaf.com/homologacao/login/index.php"><button
-                class="btnAcess">Entrar</button></a>
-    </div>
+    <side-menu></side-menu>
+
     <div id="overlay" class="overlay"></div>
+
     <div class="videoContainer">
-        <video class="elementor-background-video-hosted" autoplay muted playsinline loop src="introX.mp4"></video></div>
+        <video class="elementor-background-video-hosted" autoplay muted playsinline loop
+            src="./assets/midia/IntroZ.mp4"></video>
+    </div>
 
-        <!-- <div class="bannerText">
-            <div class="bannerCentro">
-                <div class="bannerCentro">
-                    <div class="bannerText">
-                        <h2>PLATAFORMA CISBAF - NEP</h2>
-                        <h5>A plataforma do Núcleo de Educação Permanente do CISBAF oferece cursos variados 100% online
-                            e gratuitos
-                            para profissionais de diversas áreas da saúde.</h5>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <img src="bannerCentro.png" alt="">-->
-   
-    <main>
-        <div class="carrox">
-            <div class="carrossel">
-                <div class="carrosImg">
-
-                    <a href="https://collabe.app/quiz?group=2246&amp;id=6pIl"
-                        style="width: 100%; flex-shrink: 0; text-decoration: none; position: relative;" target="_blank">
-                        <img src="https://cursoonline-nep-cisbaf.vercel.app/gamedengue2.jpg" alt=""
-                            style="width: 100%;">
-                        <div
-                            style="position: absolute; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 10px; text-align: center;">
-                            <h1 style="margin: 0;">Gamificação - Combate a Dengue 🎯</h1>
-                            <p style="margin: 5px 0 0;">Clique e participe da atividade interativa para conscientizar na
-                                luta contra a Dengue</p>
-                        </div>
-                    </a>
-
-                    <a href="https://view.genially.com/67e4161e8fc214fd102de856/interactive-content-of-roleta-nep"
-                        style="width: 100%; flex-shrink: 0; position: relative;" target="_blank">
-                        <img src="https://cursoonline-nep-cisbaf.vercel.app/roleta.jpg" alt="" role="presentation"
-                            class="img-fluid" style="width: 100%">
-                        <div
-                            style="position: absolute; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 10px; text-align: center;">
-                            <h1 style="margin: 0;">Roleta NEP</h1>
-                            <p style="margin: 5px 0 0;">Jogue e divirta-se para conscientizar na luta contra a Dengue
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="#" style="width: 100%; flex-shrink: 0; position: relative;" target="_blank">
-                        <img src="logotesteaph.png" alt="" style="width: 100%;">
-                        <div
-                            style="position: absolute; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 10px; text-align: center;">
-                            <h1 style="margin: 0;">Em breve:</h1>
-                            <p style="margin: 5px 0 0;">Atualização para Profissionais no Atendimento Pré
-                                Hospitalar(2025)</p>
-                        </div>
-                    </a>
-                </div>
-                <button class="carrosLeft" onclick="moveCarros(-1)">◀</button>
-                <button class="carrosRight" onclick="moveCarros(1)">▶</button>
-            </div>
+    <div class="heroy" id="heroy">
+        <div class="overlays"></div>
+    
+        <div class="sidebars">
+            <a data-bg="0" data-link="./catCursos.html">Catálogo de Cursos</a>
+            <a data-bg="1" data-link="./miniCursos.html">Mini Cursos - OCI</a>
+            <a data-bg="3" data-link="./pilula.html">Pílula de conhecimento</a>
+            <a data-bg="2" data-link="#">Listas de Protocolos</a>
         </div>
+    
+        <div class="content">
+            <h1>
+                <span><img src="./assets/midia/ICON.png" width="90px"></span>
+                <span style="color: grey;">Cisbaf</span>
+                <span style="color: #2559E8">NEP</span>
+            </h1>
+    
+            <p style="font-size:25px">
+                <span style="color: #2559E8">N</span>úcleo de 
+                <span style="color: #2559E8">E</span>ducação 
+                <span style="color: #2559E8">P</span>ermanente
+            </p>
+    
+            <br><br>
+            <a id="btnSaibaMais" class="btnx" href="#">Saiba mais</a>
+        </div>
+        
+    </div>
+    
+    <main>
 
         <div>
-            <h1 style="margin-top: 20px; text-align: center;"><span style="color: brown;" id="container">CATÁLOGO</span>
-                <span style="color: darkgoldenrod;">DE CURSOS</span>
-            </h1>
+            <h1 style="margin-top: 20px; text-align: center;"><span style="color: brown;" id="container">CURSOS EM</span>
+                <span style="color: darkgoldenrod;">ANDAMENTO</span></h1>
             <div class="container">
-                <div class="card">
-                    <img src="logo_leilucas.png" alt="Curso Lei Lucas">
-                    <div class="card-content">
-                        <h4>Curso Primeiros Socorros com Ênfase na Lei Lucas</h4><br>
-                        <p><b>Período do curso:</b> <br>17 de fevereiro de 2025 a 30 de março de 2025.</p>
-                        <p><b>Carga Horária:</b> 04h</p>
-                        <a href="/curso1.html">Saiba mais</a>
-                    </div>
-                </div>
 
                 <div class="card">
-                    <img src="logo_aph.png" alt="Curso de APH">
-                    <div class="card-content">
-                        <h4>Atualização para Profissionais no Atendimento Pré Hospitalar(2025)</h4><br>
-                        <p><b>Período do curso:</b> <br>Em breve.</p>
-                        <p><b>Carga Horária:</b> 40h</p>
-                        <a href="/curso2.html">Saiba mais</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="Sinais Vitais img.png" alt="Curso de Sinais Vitais">
-                    <div class="card-content">
-                        <h4>Curso de Atualização da Técnica de Aferição dos Sinais Vitais e Escala de Glasgow</h4><br>
-                        <p><b>Período do curso:</b> <br>Em breve.</p>
-                        <p><b>Carga Horária:</b> 08h</p>
-                        <a href="/curso3.html">Saiba mais</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="logo_fundEnf.png" alt="Fundamentos de Enfermagem">
+                    <img src="./assets/midia/logo_fundEnf.png" alt="Fundamentos de Enfermagem">
                     <div class="card-content">
                         <h4>Curso de Atualização em Fundamentos de Enfermagem</h4><br>
-                        <p><b>Período do curso:</b> <br>Em breve.</p>
+                        <p><b>Período do curso:</b> <br>13 de outubro de 2025 a 30 de novembro de 2025.</p>
                         <p><b>Carga Horária:</b> 24h</p>
-                        <a href="/curso4.html">Saiba mais</a>
+                        <a href="cursoFund_Enf.html">Saiba mais</a>
                     </div>
                 </div>
-            </div>
+
+                <!-- <div class="card">
+                    <div class="label-tag">Curso contínuo autoinstrutivo</div>
+                    <img src="./assets/midia/logo_pmae_oncol.png" alt="Curso OCI ONC">
+                    <div class="card-content">
+                        <h4>Protocolo de Acesso as Ofertas de Cuidados Integrados na Atenção Especializada em Oncologia
+                        </h4><br>
+                        <p><b>Período do curso:</b> <br>A partir de 09 de junho de 2025</p>
+                        <p><b>Carga Horária:</b> 04h</p>
+                        <a href="OCIOnco.html">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="label-tag">Curso contínuo autoinstrutivo</div>
+                    <img src="./assets/midia/logo_pmae_cardio.png" alt="Curso OCI CARDIO">
+                    <div class="card-content">
+                        <h4>Protocolo de Acesso as Ofertas de Cuidados Integrados na Atenção Especializada em
+                            Cardiologia</h4><br>
+                        <p><b>Período do curso:</b> <br>A partir de 09 de junho de 2025</p>
+                        <p><b>Carga Horária:</b> 04h</p>
+                        <a href="OCICardio.html">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="label-tag">Curso contínuo autoinstrutivo</div>
+                    <img src="./assets/midia/logo_oci_oftalmo.png" alt="Curso OCI OFTALMO">
+                    <div class="card-content">
+                        <h4>Protocolo de Acesso as Ofertas de Cuidados Integrados na Atenção Especializada em
+                            Oftalmologia</h4><br>
+                        <p><b>Período do curso:</b> <br>A partir de 25 de junho de 2025</p>
+                        <p><b>Carga Horária:</b> 04h</p>
+                        <a href="OCIOftalmo.html">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="label-tag">Curso contínuo autoinstrutivo</div>
+                    <img src="./assets/midia/logo_oci_ortop.png" alt="Curso OCI OFTALMO">
+                    <div class="card-content">
+                        <h4>Protocolo de Acesso as Ofertas de Cuidados Integrados na Atenção Especializada em Ortopedia
+                        </h4><br>
+                        <p><b>Período do curso:</b> <br>A partir de 18 de julho de 2025</p>
+                        <p><b>Carga Horária:</b> 04h</p>
+                        <a href="OCIOrtop.html">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/midia/logo_curso_tarm.png" alt="TARM/FROTA">
+                    <div class="card-content">
+                        <h4>Curso Introdutório para Técnico Auxiliar em Regulação Médica e Operador de Frota - CRUR
+                            Baixada Fluminense</h4><br>
+                        <p><b>Disponibilidade:</b> <br>Curso Interno</p>
+                        <p><b>Carga Horária:</b> 30h</p>
+                        <a href="cursoTARM.html">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/midia/Logo_MedReg.png" alt="Medicos Reguladores">
+                    <div class="card-content">
+                        <h4>Curso Introdutório para Médicos Reguladores - CRUR Baixada Fluminense</h4><br>
+                        <p><b>Disponibilidade:</b> <br>Curso Interno</p>
+                        <p><b>Carga Horária:</b> 30h</p>
+                        <a href="cursoMedReg.html">Saiba mais</a>
+                    </div>
+                </div> -->
+                <!-- <div class="card">
+                    <img src="./assets/midia/logoCard/logo_redeAlyne.png" alt="Curso Rede Alyne">
+                    <div class="card-content">
+                        <h4>Curso Livre de Cuidado Integral de Gestantes e Bebês - Rede Alyne</h4><br>
+                        <p><b>Período do curso:</b> <br>Em breve.</p>
+                        <p><b>Carga Horária:</b> 30h</p>
+                        <a href="cursoRedeAlyne.html">Saiba mais</a>
+                    </div>
+                </div> -->
+                <!-- <div class="card">
+                    <img src="./assets/midia/logo_aph.png" alt="Curso APH26">
+                    <div class="card-content">
+                        <h4>Atualização para Profissionais no Atendimento Pré Hospitalar(2026)</h4><br>
+                        <p><b>Período do curso:</b> <br>Em breve.</p>
+                        <p><b>Carga Horária:</b> 24h</p>
+                        <a href="cursoAPH26.html">Saiba mais</a>
+                    </div>
+                </div> -->
+
+                <!-- <div class="card">
+                    <img src="./assets/midia/logo_leilucas.png" alt="Curso APH26">
+                    <div class="card-content">
+                        <h4>Curso Primeiros Socorros
+                            com Ênfase na Lei Lucas(2026)</h4><br>
+                        <p><b>Período do curso:</b> <br>Em breve.</p>
+                        <p><b>Carga Horária:</b> 24h</p>
+                        <a href="cursoLei_Lucas26.html">Saiba mais</a>
+                    </div>
+                </div>
+            </div> -->
+
         </div>
 
 
+       
+
     </main>
-    <img class="midianep" src="midianep.png">
+    <!-- <a href="/src/newIndex.html"><img class="midianep" src="./assets/midia/midianep.png"></a> -->
     <button id="backToTop" class="back-to-top">↑</button>
 </body>
-<script src="index.js"></script>
-<footer>
-    <a href="/index.html"><img id="imgfoot" src="https://cursoonline-nep-cisbaf.vercel.app/BANNER_SITE_NOVA_LOGO.png"
-            alt=""></a>
-    <div class="icons">
-        <a href="https://www.instagram.com/cisbaf?igsh=YjZ4YjBlNGhhdW9z" target="_blank"><img src="https://cursoonline-nep-cisbaf.vercel.app/instagram.png"
-                alt=""></a>
-        <a href="https://api.whatsapp.com/send/?phone=5521968843062&text&type=phone_number&app_absent=0"
-            target="_blank"><img src="https://cursoonline-nep-cisbaf.vercel.app/whatsapp.png" alt=""></a>
-    </div>
-    <p><b>Cisbaf - Nep © 2025 - Todos os direitos reservados</b></p>
-
-</footer>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/component.js"></script>
+<foot-main></foot-main>
 
 </html>
