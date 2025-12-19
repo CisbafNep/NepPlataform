@@ -66,7 +66,12 @@ const respostas = [
   },
 
   {
-    palavras: ["cadastro", "conta", "perfil"],
+    palavras: ["suporte", "contato", "ajuda"],
+    texto: "Para falar com o suporte basta ir em <b>'FALE CONOSCO'</b> no topo do site, ou chamar no Whatsapp pelo número: <b>21 96884-3062</b> ou através do email: <b>nep.plataforma@gmail.com</b>."
+  },
+
+  {
+    palavras: ["cadastro", "minha conta", "perfil"],
     texto: "Para atualizar informações pessoais no cadastro da Plataforma CISBAF NEP (como nome completo, nome social, gênero e data de nascimento), siga as instruções: <br> 1. Acesse a plataforma. <br> 2. Clique na foto do perfil, no mesmo local, em seguida selecione “Perfil”.<br> 3. É possível alterar somente as informações permitidas, que estarão nos campos em branco. Utilize o botão 'Modificar Perfil' para confirmar as atualizações realizadas. <br> <b>ATENÇÃO:</b> o preenchimento dos dados no formulário de cadastro e na ficha de inscrição dos cursos é de inteira responsabilidade de quem preenche. Sendo assim, a atualização dos dados cadastrais será refletida somente nos certificados a serem emitidos após as alterações."
   },
   {
@@ -80,6 +85,14 @@ const respostas = [
 {
   palavras: ["tudo bem", "td bem", "tudo bom", "td bom", "beleza", "blz"],
     texto: "Tudo bem sim!"
+},
+{
+  palavras: ["tchau", "xau", "adeus", "adios", "good bye", "bye", "au revouir" , "au revoir", "tamo junto", "tmos junto", "tamo juntos", "tamos juntos", "tmj", "tmjs" ],
+    texto: "Tchau! 👋 Qualquer dúvida só chamar!"
+},
+{
+  palavras: ["curso aberto", "curso disponível", "curso disponivel", "aberto", "disponivel", "disponível"],
+    texto: "Nossos cursos abertos estão disponíveis em <b>CURSOS EM ANDAMENTO</b>. Para mais informações basta clicar em 'saiba mais' no card do curso."
 },
 {
   palavras: ["oi", "olá", "ola", "hello", "hi", "helo", "hellou", "helou"],
