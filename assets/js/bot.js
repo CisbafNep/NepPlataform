@@ -78,8 +78,12 @@ const respostas = [
     texto: "As inscrições são feitas diretamente pela plataforma. Basta ir em 'entrar' e preencher o formulário. "
 },
 {
+  palavras: ["tudo bem", "td bem", "tudo bom", "td bom", "beleza", "blz"],
+    texto: "Tudo bem sim!"
+},
+{
   palavras: ["oi", "olá", "ola", "hello", "hi", "helo", "hellou", "helou"],
-    texto: "Olá! Em que posso ajudar?😁 "
+    texto: "Olá, tudo bem? Em que posso ajudar?😁 "
 }
 ];
 
