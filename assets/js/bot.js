@@ -11,7 +11,7 @@ openChat.addEventListener("click", () => {
 
 const respostas = [
   {
-    palavras: ["grátis", "gratuitos", "gratis", "pagar", "pago", "pagos", "custa", "custo", "custar"],
+    palavras: ["grátis", "gratuitos", "gratis", "pagar", "pago", "pagos", "custa", "custo", "custar", "valor"],
     texto: "Todos os cursos do NEP CISBAF são gratuitos. No geral, são cursos abertos, não apresentam limite de vagas e podem ser iniciados em qualquer momento, por qualquer pessoa, seja ela servidora pública ou não. "
 
   },
