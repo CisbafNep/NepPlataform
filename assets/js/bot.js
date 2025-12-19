@@ -76,6 +76,10 @@ const respostas = [
 {
   palavras: ["inscrição", "inscrever", "inscricao", "inscricão", "inscrito"],
     texto: "As inscrições são feitas diretamente pela plataforma. Basta ir em 'entrar' e preencher o formulário. "
+},
+{
+  palavras: ["oi", "olá", "ola", "hello", "hi", "helo", "hellou", "helou"],
+    texto: "Olá! Em que posso ajudar?😁 "
 }
 ];
 
@@ -89,7 +93,7 @@ function enviarMensagem() {
     </div>
   `;
 
-  let resposta = "Não entendi 😕 Pode reformular a pergunta?";
+  let resposta = "Não entendi 😕 Pode reformular a pergunta? Ou entre em contato com o suporte!";
 
   respostas.forEach(item => {
     item.palavras.forEach(p => {
