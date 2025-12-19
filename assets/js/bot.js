@@ -70,7 +70,7 @@ const respostas = [
     texto: "Para atualizar informações pessoais no cadastro da Plataforma CISBAF NEP (como nome completo, nome social, gênero e data de nascimento), siga as instruções: <br> 1. Acesse a plataforma. <br> 2. Clique na foto do perfil, no mesmo local, em seguida selecione “Perfil”.<br> 3. É possível alterar somente as informações permitidas, que estarão nos campos em branco. Utilize o botão 'Modificar Perfil' para confirmar as atualizações realizadas. <br> <b>ATENÇÃO:</b> o preenchimento dos dados no formulário de cadastro e na ficha de inscrição dos cursos é de inteira responsabilidade de quem preenche. Sendo assim, a atualização dos dados cadastrais será refletida somente nos certificados a serem emitidos após as alterações."
   },
   {
-    palavras: ["obrigado", "obrigada", "brigado", "brigada", "grato", "gratidão", "gratidao", "valeu", "vlw", "grata", "muito bom", "👍", "ok"],
+    palavras: ["obrigado", "obrigada", "brigado", "brigada", "grato", "gratidão", "gratidao", "valeu", "vlw", "grata", "muito bom", "👍", "ok", "obg"],
     texto: "Disponha. Se houver mais dúvidas só chamar 👍"
   },
 {
