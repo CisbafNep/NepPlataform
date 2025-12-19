@@ -59,3 +59,27 @@ class Footers extends HTMLElement {
     }
 }
 customElements.define("foot-main", Footers);
+
+class Nepbot extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <div>
+        <button id="openChat" aria-label="Assistente NEP">
+            <img src="/assets/midia/nepbot.gif" alt="Assistente NEP">
+        </button>
+
+        <div id="chatBox">
+            <div id="chatHeader"><span><img src="/assets/midia/ICON.png" alt=""></span> Assistente NEP</div>
+
+            <div id="chatMessages"></div>
+
+            <div id="chatInput">
+                <input type="text" id="userInput" placeholder="Digite sua pergunta..." autocomplete="off">
+                <button id="sendBtn">Enviar</button>
+            </div>
+        </div>
+    </div>
+        `
+    }
+}
+customElements.define("nep-bot", Nepbot);
