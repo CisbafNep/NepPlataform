@@ -11,7 +11,6 @@ class headSite extends HTMLElement {
         <div id="mainhead">
                 <a href="index.html">Página Inicial</a>
                 <a href="about.html">Sobre o NEP</a>                
-            <a href="https://plataforma.cisbaf.org.br/mod/page/view.php?id=566">Perguntas Frequentes</a>
                <a href="timeline.html">História do NEP</a>
                <a href="https://api.whatsapp.com/send/?phone=5521968843062&text&type=phone_number&app_absent=0" target="_blank">Fale conosco</a>
             <a href="https://plataforma.cisbaf.org.br/my/" ><button class="btnAcess">Entrar</button></a>
@@ -33,7 +32,6 @@ class menuSide extends HTMLElement {
             <a href="index.html"><img class="logo" src="./assets/midia/BANNER_SITE_NOVA_LOGO.png" style="width: 200px;"></a>
             <a href="index.html">Página Inicial</a>
            <a href="about.html">Sobre o NEP</a>
-         <a href="https://plataforma.cisbaf.org.br/mod/page/view.php?id=566">Perguntas Frequentes</a>
                 <a href="timeline.html">História do NEP</a>
             <a href="https://api.whatsapp.com/send/?phone=5521968843062" target="_blank">Fale conosco</a>
         <a href="https://plataforma.cisbaf.org.br/my/" ><button class="btnAcess">Entrar</button></a>

@@ -35,6 +35,10 @@ const respostas = [
     texto: "Os cursos à distância de curta duração oferecidos na Plataforma CISBAF NEP são cursos de educação continuada. Por isso, não estão sujeitos ao reconhecimento do MEC."
   },
   {
+    palavras: ["mais de um", "mais de 1", "ao mesmo"],
+    texto: "Pode sim, mas cada curso tem sua carga horária definida, então fique atento(a) ao prazo e granta seu certificado."
+  },
+  {
     palavras: ["período", "periodo"],
     texto: "As datas de início e término do curso está informada no card do curso."
   },
@@ -48,7 +52,7 @@ const respostas = [
   },
 
   {
-    palavras: ["acesso", "acessar", "entrar", "tempo"],
+    palavras: ["acesso", "acessar", "entrar"],
     texto: "Ao se inscrever no curso, o acesso é liberado de imediato, na data disponível informada na descrição."
   },
   {
