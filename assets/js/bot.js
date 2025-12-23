@@ -61,7 +61,7 @@ const respostas = [
   },
 
   {
-    palavras: ["gero", "gerar", "gera", "emito", "emitir", "emissão", "emissao"],
+    palavras: ["gero", "gerar", "gera", "emito", "emitir", "emissão", "emissao", "pegar o diploma", "pegar diploma", "pegar o certificado", "pegar certificado"],
     texto: "A emissão de certificado de um curso realizado na Plataforma CISBAF NEP estará disponível quando todas as atividades dele estiverem concluídas com aproveitamento igual ou superior à nota mínima exigida no ambiente do curso. <br> Para emitir o certificado de um curso realizado na Plataforma CISBAF NEP, siga os passos: <br> 1. Acessea plataforma. <br> 2. Com o login realizado, role a pagina “Portal do Aluno” até encontrar 'Meus Certificados'. <br> 3. Vá até o curso para o qual deseja emitir o certificado e clique em 'Gerar Certificado'. <br> 4. Pronto! Seu certificado será baixado e você poderá imprimi- lo e / ou salvá - lo."
   },
   {
