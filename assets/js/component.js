@@ -67,7 +67,7 @@ class Nepbot extends HTMLElement {
         </button>
 
         <div id="chatBox">
-            <div id="chatHeader"><span><img src="/assets/midia/ICON.png" alt=""></span> Assistente NEP</div>
+            <div id="chatHeader"><span><img src="/assets/midia/ICON.png" alt=""></span>CyberNep - Assistente Virtual</div>
 
             <div id="chatMessages"></div>
 
