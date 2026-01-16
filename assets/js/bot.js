@@ -9,6 +9,35 @@ openChat.addEventListener("click", () => {
     chatBox.style.display === "block" ? "none" : "block";
 });
 
+/* ===============================
+   NÃO FECHAR AO CLICAR NO CHAT
+================================ */
+chatBox.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+/* ===============================
+   FECHAR AO CLICAR FORA
+================================ */
+document.addEventListener("click", (event) => {
+  const clicouNoBotao = openChat.contains(event.target);
+  const clicouNoChat = chatBox.contains(event.target);
+
+  if (!clicouNoBotao && !clicouNoChat) {
+    chatBox.style.display = "none";
+  }
+});
+
+/* ===============================
+   FECHAR COM ESC (PC)
+================================ */
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    chatBox.style.display = "none";
+  }
+});
+
+
 const respostas = [
   {
     palavras: ["grátis", "gratuitos", "gratis", "pagar", "pago", "pagos", "custa", "custo", "custar", "valor"],
