@@ -63,7 +63,7 @@ class Nepbot extends HTMLElement {
         this.innerHTML = `
         <div>
         <button id="openChat" aria-label="Assistente NEP">
-            <img src="/assets/midia/nepbot.gif" alt="Assistente NEP">
+            <img src="/assets/midia/Robotnep.png" alt="Assistente NEP">
         </button>
 
         <div id="chatBox">
